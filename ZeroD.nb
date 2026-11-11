@@ -1,0 +1,527 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[     20335,        526]
+NotebookOptionsPosition[     18460,        484]
+NotebookOutlinePosition[     18861,        500]
+CellTagsIndexPosition[     18818,        497]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["\[Phi]", "4"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "575a9144-3dcc-3844-bb5c-287e14d77df2"],
+ " in Zero Dimensions (0D)"
+}], "Title",
+ CellChangeTimes->{{4.0033822442828903`*^9, 4.003382318094164*^9}, {
+  4.003382390378153*^9, 4.0033823929767475`*^9}, {4.003382437897625*^9, 
+  4.0033824399310455`*^9}},ExpressionUUID->"a0c6e1d9-a0c3-6640-bce2-\
+2bd8258ca025"],
+
+Cell["Initial investigation", "Subtitle",
+ CellChangeTimes->{{4.0033824106112804`*^9, 4.00338245921097*^9}, {
+  4.0033846552554016`*^9, 4.0033846568807507`*^9}, {4.0033847202383842`*^9, 
+  4.003384751454502*^9}},ExpressionUUID->"5fe5e9dd-2093-ac4f-9803-\
+507eef820c87"],
+
+Cell[TextData[{
+ "Consider a function z of a single continuous variable x with coupling \
+constant g. This consists of a free action (",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "81fcd775-b183-b949-82d2-979f82ce9d57"],
+ ") term and an interaction (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SuperscriptBox["x", "4"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "2ebab351-1aee-2c4e-bf4b-f10e39c3c43b"],
+ ") term."
+}], "Text",
+ CellChangeTimes->{{4.0033825467609596`*^9, 4.003382615976059*^9}, {
+  4.003382653628908*^9, 4.0033826545782185`*^9}, {4.0033829121769695`*^9, 
+  4.0033830073042736`*^9}, {4.0033887720527325`*^9, 4.003388773702183*^9}, {
+  4.003390587210211*^9, 
+  4.0033906668535175`*^9}},ExpressionUUID->"9e839171-679f-e548-b48b-\
+d568c2f22a40"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"interaction", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox["g", 
+      RowBox[{"4", "!"}]]}], 
+    SuperscriptBox["x", "4"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"free", " ", "=", " ", 
+   RowBox[{"-", 
+    FractionBox[
+     SuperscriptBox["x", "2"], "2"]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"z", "=", 
+   RowBox[{
+    FractionBox["1", 
+     SqrtBox[
+      RowBox[{"2", "\[Pi]"}]]], 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", 
+      RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"(", 
+        RowBox[{"interaction", "+", "free"}], ")"}]], 
+      RowBox[{"\[DifferentialD]", "x"}]}]}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{4.003382626379324*^9, 4.003382646443014*^9}, {
+  4.0033827062915363`*^9, 4.003382714791115*^9}, {4.0033827482740192`*^9, 
+  4.003382885604994*^9}, {4.0033830340937977`*^9, 4.0033830700864677`*^9}, {
+  4.0033831459682617`*^9, 4.003383170235428*^9}, {4.003383339780342*^9, 
+  4.0033833529144115`*^9}, {4.0033833998475246`*^9, 4.0033834047360325`*^9}, {
+  4.0033846264746666`*^9, 4.0033846307728443`*^9}, {4.003384772036291*^9, 
+  4.003384786855425*^9}, {4.003385121928211*^9, 4.0033851354284534`*^9}, {
+  4.0033869282783394`*^9, 4.0033869446125793`*^9}, {4.0033894196135235`*^9, 
+  4.003389433172121*^9}, {4.003389749021042*^9, 4.003389794584404*^9}},
+ CellLabel->
+  "In[245]:=",ExpressionUUID->"463f9bf8-ec93-004f-aac1-fe941bd4abb7"],
+
+Cell[TextData[{
+ "For small g we can expand the exponential of the interaction component as:\n\
+\n exp(",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{"-", 
+    FractionBox["g", 
+     RowBox[{"4", "!"}]]}], 
+   SuperscriptBox["x", "4"]}]], "Input",
+  CellChangeTimes->{{4.003382626379324*^9, 4.003382646443014*^9}, {
+   4.0033827062915363`*^9, 4.003382714791115*^9}, {4.0033827482740192`*^9, 
+   4.003382885604994*^9}, {4.0033830340937977`*^9, 4.0033830700864677`*^9}, {
+   4.0033831459682617`*^9, 4.003383170235428*^9}, {4.003383339780342*^9, 
+   4.0033833529144115`*^9}, {4.0033833998475246`*^9, 
+   4.0033834047360325`*^9}, {4.0033846264746666`*^9, 
+   4.0033846307728443`*^9}, {4.003384772036291*^9, 4.003384786855425*^9}, {
+   4.003385121928211*^9, 4.0033851354284534`*^9}},ExpressionUUID->
+  "0558fd7f-19a0-204e-9ba1-90452c2bae52"],
+ ") = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"n", "=", "0"}], "\[Infinity]"], 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"-", "1"}], ")"}], "n"], 
+      RowBox[{"n", "!"}]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["g", 
+        RowBox[{"4", "!"}]], ")"}], "n"], 
+     SuperscriptBox["x", 
+      RowBox[{"4", "n"}]]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "b1aa1ecc-5659-d645-b1b7-f8c302c1b2e4"],
+ "\n \n And then to remove the x dependence we evaluate the integral:\n \n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "\[Infinity]"}], "\[Infinity]"], 
+    SuperscriptBox["\[ExponentialE]", 
+     FractionBox[
+      RowBox[{"-", 
+       SuperscriptBox["x", "2"]}], "2"]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "78e8cc5e-7dd1-dc4e-bd8d-6f2a423d2b94"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", 
+    RowBox[{"4", "n"}]], TraditionalForm]],ExpressionUUID->
+  "b256b65f-73f1-ef48-9a69-9bdc49463106"],
+ "\[DifferentialD]x"
+}], "Text",
+ CellChangeTimes->{{4.0033831024357147`*^9, 4.0033831175895805`*^9}, {
+  4.003383380483713*^9, 4.0033833808310547`*^9}, {4.003383997133795*^9, 
+  4.003384003091837*^9}, {4.0033848721367054`*^9, 4.0033850328792152`*^9}, {
+  4.003385148942974*^9, 4.003385299358219*^9}, {4.003385337054617*^9, 
+  4.0033853478894577`*^9}, {4.003390253436758*^9, 4.003390314448435*^9}, {
+  4.003394186464033*^9, 
+  4.0033941976784782`*^9}},ExpressionUUID->"ecb70b0b-0786-c94b-af7c-\
+f1b95212359e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"xIntegrand", " ", "=", 
+   RowBox[{
+    RowBox[{"Exp", "[", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"x", "^", "2"}]}], "/", "2"}], "]"}], " ", 
+    RowBox[{"x", "^", 
+     RowBox[{"(", 
+      RowBox[{"4", "n"}], ")"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"gammaFactor", " ", "=", " ", 
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{
+    RowBox[{"Integrate", "[", 
+     RowBox[{"xIntegrand", ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "Infinity"}], ",", "Infinity"}], "}"}]}], "]"}], ",", 
+    RowBox[{"Assumptions", "->", 
+     RowBox[{
+      RowBox[{"n", "\[Element]", "Integers"}], "&&", 
+      RowBox[{"n", ">=", "0"}]}]}]}], 
+   "]"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{4.0033831289855595`*^9, 4.0033831325363655`*^9}, {
+   4.003383293799652*^9, 4.0033833086654034`*^9}, {4.003383414230484*^9, 
+   4.0033835112629757`*^9}, {4.003384117622385*^9, 4.003384130774252*^9}, {
+   4.0033841627731686`*^9, 4.00338417571999*^9}, {4.0033842407269306`*^9, 
+   4.0033842638498173`*^9}, {4.003384302796997*^9, 4.0033843033785763`*^9}, {
+   4.003385358505966*^9, 4.003385381803135*^9}, {4.003385417670267*^9, 
+   4.003385443188547*^9}, {4.0033854740010014`*^9, 4.0033855199197025`*^9}, {
+   4.003385567581873*^9, 4.0033855723822803`*^9}, {4.0033856119836273`*^9, 
+   4.0033856164654217`*^9}, {4.0033856727455997`*^9, 4.0033856824289417`*^9}, 
+   4.003385727577984*^9, {4.003385758776781*^9, 4.003385781592884*^9}, {
+   4.0033858266921024`*^9, 4.003385827025444*^9}, {4.003385906306614*^9, 
+   4.003386209914049*^9}, {4.003386278296259*^9, 4.003386329627121*^9}, {
+   4.0033903248973923`*^9, 4.003390338834608*^9}},
+ CellLabel->
+  "In[248]:=",ExpressionUUID->"9a5f257a-707d-954f-8f45-24799397c40e"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["2", 
+   RowBox[{
+    FractionBox["1", "2"], "+", 
+    RowBox[{"2", " ", "n"}]}]], " ", 
+  RowBox[{"Gamma", "[", 
+   RowBox[{
+    FractionBox["1", "2"], "+", 
+    RowBox[{"2", " ", "n"}]}], "]"}]}]], "Output",
+ CellChangeTimes->{
+  4.003385526765604*^9, 4.0033855778143387`*^9, 4.0033856205129604`*^9, {
+   4.003385678911495*^9, 4.003385687127945*^9}, {4.003385788531273*^9, 
+   4.0033858335910206`*^9}, {4.0033861482490807`*^9, 4.0033861650148735`*^9}, 
+   4.0033862832945576`*^9, 4.00338633617622*^9, 4.003394172230221*^9},
+ CellLabel->
+  "Out[249]=",ExpressionUUID->"8e9e2965-4d20-a549-8c57-8bcf818f5fa0"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Note that this gammaFactor is equivalent to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"2", "\[Pi]"}]], 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"4", "n"}], "-", "1"}], ")"}], "!!"}], " "}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "4073efc8-98e3-8346-99d4-c9752249d19a"],
+ " or equivalently as factorials ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"4", "n"}], ")"}], "!"}], 
+    RowBox[{
+     SuperscriptBox["4", "n"], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"2", "n"}], ")"}], "!"}]}]], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "da8ef421-829f-b54d-a388-402985836ad3"],
+ " \nUsing this we can express the series z as the sum as the following (and \
+as an example compute for n 0 -> 3):"
+}], "Text",
+ CellChangeTimes->{{4.0033863435435047`*^9, 4.003386373462538*^9}, {
+   4.0033864135763855`*^9, 4.0033865132252426`*^9}, {4.0033866117360706`*^9, 
+   4.0033866118531685`*^9}, {4.0033868575795383`*^9, 4.003386915826832*^9}, {
+   4.0033869642572403`*^9, 4.0033873033651733`*^9}, {4.0033873351477356`*^9, 
+   4.003387393746313*^9}, 4.003387444458927*^9, {4.0033878491795864`*^9, 
+   4.003387850697588*^9}, {4.0033884694274044`*^9, 4.003388558444994*^9}, {
+   4.00339421339592*^9, 
+   4.0033942274798126`*^9}},ExpressionUUID->"4fb7fa78-19b7-0646-9a30-\
+59589d8766f8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"zSeriesTerms", "=", 
+   FormBox[
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"-", "1"}], ")"}], "n"], "  ", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"4", "n"}], ")"}], "!"}], 
+      RowBox[{
+       SuperscriptBox["2", 
+        RowBox[{"2", "n"}]], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"2", "n"}], ")"}], "!"}], 
+       RowBox[{"n", "!"}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"4", "!"}], ")"}], "n"]}]], 
+     SuperscriptBox["g", "n"]}],
+    TraditionalForm]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"zFirstThreeTerms", "=", " ", 
+  FormBox[
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"n", "=", "0"}], "3"], "zSeriesTerms"}],
+   TraditionalForm]}]}], "Input",
+ CellChangeTimes->{{4.0033874906289253`*^9, 4.003387514958103*^9}, {
+   4.0033875517048416`*^9, 4.003387630244049*^9}, {4.0033877416914654`*^9, 
+   4.0033877561962624`*^9}, {4.0033877940505276`*^9, 
+   4.0033878325527477`*^9}, {4.0033878696744843`*^9, 
+   4.0033878726228905`*^9}, {4.0033880521708984`*^9, 4.0033880669588146`*^9}, 
+   4.00338859582415*^9, {4.0033888010174713`*^9, 4.0033888102599525`*^9}, {
+   4.003390361315956*^9, 4.0033903790146904`*^9}, 4.003390814049122*^9},
+ CellLabel->
+  "In[250]:=",ExpressionUUID->"ab4ec9fc-3dab-d148-9649-5fa8eea32c7a"],
+
+Cell[BoxData[
+ RowBox[{"1", "-", 
+  FractionBox["g", "8"], "+", 
+  FractionBox[
+   RowBox[{"35", " ", 
+    SuperscriptBox["g", "2"]}], "384"], "-", 
+  FractionBox[
+   RowBox[{"385", " ", 
+    SuperscriptBox["g", "3"]}], "3072"]}]], "Output",
+ CellChangeTimes->{4.0033874993913975`*^9, 4.003387634364477*^9, 
+  4.003387833733881*^9, 4.003387874135811*^9, 4.0033880899462414`*^9, 
+  4.0033903893292027`*^9, 4.003394172280287*^9},
+ CellLabel->
+  "Out[251]=",ExpressionUUID->"6afb37eb-1732-b640-9834-d4b5d56e15a8"]
+}, Open  ]],
+
+Cell["\<\
+The 0D case is especially informative, as we can evaluate the exact integral \
+and compare it with the perturbative approximation:\
+\>", "Text",
+ CellChangeTimes->{{4.003388608989916*^9, 
+  4.003388715686428*^9}},ExpressionUUID->"93bb3a34-446a-994e-899c-\
+311d391275e9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"interactionTerm", "[", 
+    RowBox[{"g_", ",", "x_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{"g", "/", 
+       RowBox[{"4", "!"}]}], ")"}]}], " ", 
+    RowBox[{"x", "^", "4"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"freeTerm", "[", "x_", "]"}], ":=", 
+    RowBox[{"-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"x", "^", "2"}], "/", "2"}], ")"}]}]}], ";"}], "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"ZExact", "[", 
+    RowBox[{"gVal_", "?", "NumericQ"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"NIntegrate", "[", 
+     RowBox[{
+      RowBox[{"\[ExponentialE]", "^", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"freeTerm", "[", "x", "]"}], "+", 
+         RowBox[{"interactionTerm", "[", 
+          RowBox[{"gVal", ",", "x"}], "]"}]}], ")"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "Infinity"}], ",", "Infinity"}], "}"}]}], "]"}], "/", 
+    SqrtBox[
+     RowBox[{"2", "\[Pi]"}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"ZPerturbative", "[", "gVal_", "]"}], ":=", 
+   RowBox[{"zFirstThreeTerms", " ", "/.", " ", 
+    RowBox[{"g", "->", " ", "gVal"}]}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"gValues", "=", 
+   RowBox[{"Range", "[", 
+    RowBox[{"0", ",", "1", ",", "0.1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"allData", "=", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"gVal", ",", 
+        RowBox[{"ZExact", "[", "gVal", "]"}], ",", 
+        RowBox[{"ZPerturbative", "[", "gVal", "]"}], ",", " ", 
+        RowBox[{
+         RowBox[{"ZExact", "[", "gVal", "]"}], "-", 
+         RowBox[{"ZPerturbative", "[", "gVal", "]"}]}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"gVal", ",", "gValues"}], "}"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"PrependTo", "[", 
+   RowBox[{"allData", ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<g\>\"", ",", "\"\<Exact Z(g)\>\"", 
+      ",", "\"\<Perturbative Z(g)\>\"", ",", " ", "\"\<Diff\>\""}], "}"}]}], 
+   "]"}], ";"}], "\n", 
+ RowBox[{"Grid", "[", 
+  RowBox[{"allData", ",", 
+   RowBox[{"Frame", "->", "All"}], ",", 
+   RowBox[{"Alignment", "->", "Left"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{4.0033887347193794`*^9, 4.0033887347193794`*^9}, 
+   4.003388919329544*^9, {4.0033890060638027`*^9, 4.003389062224535*^9}, {
+   4.0033890948911266`*^9, 4.0033890950053864`*^9}, {4.003389160604973*^9, 
+   4.003389185235733*^9}, 4.003389271350485*^9, 4.003389392911398*^9, 
+   4.003389427113901*^9, {4.0033896281136055`*^9, 4.003389675671522*^9}, {
+   4.003389847765011*^9, 4.0033898738830967`*^9}, {4.0033899132838383`*^9, 
+   4.0033899152969627`*^9}, {4.003389945885807*^9, 4.003390009044613*^9}, {
+   4.0033900774580727`*^9, 4.0033900918234386`*^9}, {4.00339047492774*^9, 
+   4.0033905174628105`*^9}, {4.0033907226844807`*^9, 4.003390993340849*^9}, {
+   4.00339103169499*^9, 4.003391035040943*^9}, {4.0033910797258873`*^9, 
+   4.00339110663982*^9}, {4.0033934822236004`*^9, 4.0033935254704723`*^9}, {
+   4.0033939932867203`*^9, 4.0033940230698814`*^9}, {4.003394131682186*^9, 
+   4.00339414568355*^9}},
+ CellLabel->
+  "In[252]:=",ExpressionUUID->"755ac270-ea8c-624d-811b-01b707b89749"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"g\"\>", "\<\"Exact Z(g)\"\>", "\<\"Perturbative Z(g)\"\>", \
+"\<\"Diff\"\>"},
+    {"0.`", "0.9999999999996263`", "1.`", 
+     RowBox[{"-", "3.737010700888277`*^-13"}]},
+    {"0.1`", "0.9883063981472563`", "0.9882861328125`", 
+     "0.00002026533475629755`"},
+    {"0.2`", "0.9779153733898277`", "0.9776432291666667`", 
+     "0.0002721442231610194`"},
+    {"0.30000000000000004`", "0.9685121884631076`", "0.9673193359375`", 
+     "0.001192852525607635`"},
+    {"0.4`", "0.9598957289299052`", "0.9565625`", "0.0033332289299051743`"},
+    {"0.5`", "0.9519263681225402`", "0.9446207682291666`", 
+     "0.007305599893373538`"},
+    {"0.6000000000000001`", "0.9445018016750638`", "0.9307421875`", 
+     "0.013759614175063772`"},
+    {"0.7000000000000001`", "0.9375441270015482`", "0.9141748046875`", 
+     "0.023369322314048202`"},
+    {"0.8`", "0.9309922650765188`", "0.8941666666666667`", 
+     "0.03682559840985211`"},
+    {"0.9`", "0.9247972112980457`", "0.8699658203124999`", 
+     "0.05483139098554579`"},
+    {"1.`", "0.9189189059282966`", "0.8408203125`", "0.07809859342829661`"}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  4.0033890531078205`*^9, 4.0033890967052803`*^9, 4.0033891880532246`*^9, 
+   4.003389274933655*^9, 4.003389395045223*^9, 4.0033896893537083`*^9, {
+   4.0033898263815365`*^9, 4.003389876480011*^9}, {4.003389983760296*^9, 
+   4.003390010592346*^9}, 4.003390095454935*^9, {4.003390890129135*^9, 
+   4.003390954610302*^9}, 4.003391038374016*^9, 4.00339108447196*^9, {
+   4.00339349872101*^9, 4.0033935225033016`*^9}, {4.0033941560646935`*^9, 
+   4.003394172363655*^9}},
+ CellLabel->
+  "Out[259]=",ExpressionUUID->"5f798811-82a9-d44b-83a3-4e4e41d58082"]
+}, Open  ]],
+
+Cell["\<\
+This shows that for a small coupling constant (g) perturbation theory gives \
+values close to the exact integral. However as g grows the perturbative \
+approximation becomes worse, as the underlying series is asymptotic. The \
+series is asymptotic as the number of Wick contractions in the term grows as \
+a factorial of n (see pdf notes):
+(2n-1)!! 
+
+Next...
+I will tackle the 1D case, Quantum Mechanics.
+This will involve a different approach to the solution whereby we will set up \
+a Hamiltonian containing the interaction term, and compute its eigenvalues.
+\
+\>", "Text",
+ CellChangeTimes->{{4.0033932427802887`*^9, 4.003393411875431*^9}, {
+  4.0033937411960487`*^9, 4.00339387252429*^9}, {4.003394277260359*^9, 
+  4.0033943055412865`*^9}, {4.0033943363587456`*^9, 4.003394442357828*^9}, {
+  4.0033945015061283`*^9, 
+  4.0033945089006557`*^9}},ExpressionUUID->"68394cf0-d1d5-1744-acc7-\
+c59622a41588"]
+}, Open  ]]
+},
+WindowSize->{1440, 741.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"15.0 for Microsoft Windows (64-bit) (July 2, 2026)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e0e76539-ace2-764b-99f9-5e03758d0b0e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[422, 15, 452, 11, 96, "Title",ExpressionUUID->"a0c6e1d9-a0c3-6640-bce2-2bd8258ca025"],
+Cell[877, 28, 269, 4, 52, "Subtitle",ExpressionUUID->"5fe5e9dd-2093-ac4f-9803-507eef820c87"],
+Cell[1149, 34, 870, 22, 33, "Text",ExpressionUUID->"9e839171-679f-e548-b48b-d568c2f22a40"],
+Cell[2022, 58, 1531, 37, 126, "Input",ExpressionUUID->"463f9bf8-ec93-004f-aac1-fe941bd4abb7"],
+Cell[3556, 97, 2475, 64, 179, "Text",ExpressionUUID->"ecb70b0b-0786-c94b-af7c-f1b95212359e"],
+Cell[CellGroupData[{
+Cell[6056, 165, 1792, 38, 66, "Input",ExpressionUUID->"9a5f257a-707d-954f-8f45-24799397c40e"],
+Cell[7851, 205, 649, 16, 46, "Output",ExpressionUUID->"8e9e2965-4d20-a549-8c57-8bcf818f5fa0"]
+}, Open  ]],
+Cell[8515, 224, 1439, 38, 61, "Text",ExpressionUUID->"4fb7fa78-19b7-0646-9a30-59589d8766f8"],
+Cell[CellGroupData[{
+Cell[9979, 266, 1377, 38, 95, "Input",ExpressionUUID->"ab4ec9fc-3dab-d148-9649-5fa8eea32c7a"],
+Cell[11359, 306, 510, 13, 48, "Output",ExpressionUUID->"6afb37eb-1732-b640-9834-d4b5d56e15a8"]
+}, Open  ]],
+Cell[11884, 322, 280, 6, 33, "Text",ExpressionUUID->"93bb3a34-446a-994e-899c-311d391275e9"],
+Cell[CellGroupData[{
+Cell[12189, 332, 3395, 86, 222, "Input",ExpressionUUID->"755ac270-ea8c-624d-811b-01b707b89749"],
+Cell[15587, 420, 1927, 39, 233, "Output",ExpressionUUID->"5f798811-82a9-d44b-83a3-4e4e41d58082"]
+}, Open  ]],
+Cell[17529, 462, 915, 19, 186, "Text",ExpressionUUID->"68394cf0-d1d5-1744-acc7-c59622a41588"]
+}, Open  ]]
+}
+]
+*)
+
